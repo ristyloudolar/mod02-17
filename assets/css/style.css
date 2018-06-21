@@ -17,7 +17,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: beige;
+	background-color: snow;
 }
 
 /*div.container {
@@ -33,7 +33,7 @@ main {
 
 header {
 	/*min-height: 10vh;*/
-	background-color: brown;
+	background-color: chocolate;
 }
 
 main > div.right,
@@ -43,20 +43,18 @@ main > div.left {
 }
 
 main > div.left {
-	/*background-color: violet;*/
-	/*padding: 15px;*/
+	text-align: center;
+	padding-left: 15px;
 }
 
-
 main > div.right {
-	/*background-color: red;*/
-	/*padding: 15px;*/
+	padding-left: 25px;
 }
 
 
 footer {
 	min-height: 20vh;
-	background-color: orange;
+	/*background-color: orange;*/
 }
 
 
@@ -127,6 +125,9 @@ footer {
 
 @media only screen and (min-width: 961px) {
 
+	hr {
+		margin-bottom: 20px;
+	}
 
 	nav {
 		/*background-color: black;*/
@@ -136,15 +137,16 @@ footer {
 	}
 	nav	> ul {
 		list-style-type: none;
-
+		text-align: center;
 	}
 
 	nav > ul > li {
 		display: inline;
 		padding-left: 5px;
 		padding-right: 5px;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		word-spacing: 1px;
+
 	}
 
 	nav > ul > li > a {
@@ -154,14 +156,119 @@ footer {
 		padding: 10px;
 	}
 
-	main > div.left > img {
-		padding-right: 20px;
+
+	main > div.left > div.left1 > img,
+	main > div.left > div.left2 > img,
+	main > div.left > div.left3 > img {
 		width: 100%;
+		margin-bottom: 20px;
 	}
+
+	main > div.left > div.left1 > h1 {
+		font-style: italic;
+		font-size: 30px;
+		color: red;
+		margin-bottom: 20px;	
+	}
+
+	main > div.left > div.left1 > p {
+		margin-bottom: 20px;
+	}
+
+
+	main > div.left > div.left1 > textarea {
+		display: block;
+		margin-bottom: 20px;
+		width: 70%;
+		height: 50px;
+		margin-top: 21px;
+		margin-left: 6px;
+	}
+
+	main > div.left > div.left2 {
+		padding: 10px;
+	}
+
+	main > div.left > div.left2 > div.scroll {
+		border: 1px solid black;
+		height: 250px;
+		overflow: scroll;
+	}
+
+	main > div.left > div.left2 > div > button {
+		border: 1px solid black;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+
+	main > div.left > div.left2,
+	main > div.left > div.left3.
+	main > div.left > div.left4 {
+		border-bottom: 1px solid red;
+	} 
+
+	
+	main > div.left > div.left3 > h2,
+	main > div.left > div.left4 > h2 {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-style: italic;
+		color: red;
+		font-size: 20px;
+
+	}
+
+	main > div.left > div.left3 > div {
+		margin-bottom: 15px;
+	}
+
+	main > div.left > div.left3 > div > img {
+		float:left;
+		width: 50%;
+		padding-right: 10px;
+	}
+
+	main > div.left > div.left3 > div > p {
+		text-align: justify;
+	}
+
+	main > div.left > div.left3 > div > p > a {
+		text-decoration: none;
+		
+	}
+
+	main > div.left > div.left3 > div > p > a:hover {
+		text-decoration: underline;
+	}
+
+	main > div.left > div.left4 > ul {
+		list-style-type: none;
+	}
+
+	main > div.left > div.left4 > ul > li {
+		text-align: left;
+		border-bottom: 1px solid black;
+		padding-bottom: 15px;
+		padding-top: 15px;
+
+	}
+
+	main > div.left > div.left4 > ul > li:last-child {
+		border-bottom: none;
+	}
+
+	main > div.left > div.left4 > ul > li > a {
+		color: black;
+		text-decoration: none;
+	}
+
 
 	main > div.right > div {
 		margin-top: 30px;
-		border: 5px solid brown;
+		border: 5px solid sandybrown;
 		background-color: white;
 	}
 
@@ -173,8 +280,7 @@ footer {
 		font-family: 'Lato', sans-serif;
 		font-size: 25px;
 		float: left;
-		/*line-height: 32px;*/
-		/*padding-top: 20px;*/
+		font-style: italic;
 		color: red;
 	}
 
@@ -191,25 +297,37 @@ footer {
 		
 	}
 
-	main > div.right > div.box > div {
+	main > div.right > div.box > div.content {
 		padding-top: 20px;
-		/*padding-bottom: 20px;*/
 	}
 
-	main > div.right > div.box > div > img {
-		float: left;
+	main > div.right > div.box > div.content > div.image {
 		width: 25%;
+		float: left;
+	}
+
+	main > div.right > div.box > div.content > div.details {
+		width: 73%;
+		float: left;
+		
+	}
+
+	main > div.right > div.box > div.content > div.image > img {
+		width: 100%;
 		padding-right: 10px;
 	}
 
-	main > div.right > div.box > div > a.continue {
+	main > div.right > div.box > div.content > div.details > a.continue {
+		float: right;
 		text-align: right;
-		/*border: 1px solid black;*/
-		padding: 10px;
+		color: white;
+		padding: 5px;
 		text-decoration: none;
-		background-color: brown;
-		color: black;
-		display: inline-block;
+		background-color: saddlebrown;
+		letter-spacing: 1px;
+		margin-top: 10px;
+		text-transform: uppercase;
+		font-size: 10px;
 	}
 
 	main > div.right > div.box > div > p {
@@ -218,18 +336,36 @@ footer {
 
 	}
 
-	main > div.right > footer > div > a {
-		text-decoration: none;
-		text-align: center;
+	main > div.right > footer {
+		margin-top: 30px;
 	}
 
 
 
+	main > div.right > footer > div > a {
+		text-align: center;
+		display: block;
+	}
 
+	main > div.right > footer > div > a,
+	main > div.right > footer > div > p > a {
+		text-decoration: none;
+		color: black;
+	}
 
-	/*main > div.right > div.row1 > p {
-		overflow: hidden;
-	}*/
+	main > div.right > footer > div > a:hover,
+	main > div.right > footer > div > p > a:hover {
+		text-decoration: underline;
+	}
+
+	main > div.right > footer > div > p {
+		padding-top: 40px;
+	}
+
+	main > div.right > footer > div > p:last-child {
+		padding-left: 80px;
+		font-size: 15px;
+	}
 
 
 
@@ -293,7 +429,248 @@ footer {
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+	main > div {
+		width: 100%;
+	}
+
+	nav {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		width: 100%;
+	}
+
+	nav	> ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav > ul > li {
+		display: inline;
+		padding-left: 5px;
+		padding-right: 5px;
+		letter-spacing: 1px;
+		word-spacing: 1px;
+
+	}
+
+	nav > ul > li > a {
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		padding: 10px;
+	}
+
+
+	/*main > div.left > div.left1 > img,
+	main > div.left > div.left2 > img,
+	main > div.left > div.left3 > img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	main > div.left > div.left1 > h1 {
+		font-style: italic;
+		font-size: 30px;
+		color: red;
+		margin-bottom: 20px;	
+	}
+
+	main > div.left > div.left1 > p {
+		margin-bottom: 20px;
+	}
+
+
+	main > div.left > div.left1 > textarea {
+		display: block;
+		margin-bottom: 20px;
+		width: 70%;
+		height: 50px;
+		margin-top: 21px;
+		margin-left: 6px;
+	}
+
+	main > div.left > div.left2 {
+		padding: 10px;
+	}
+
+	main > div.left > div.left2 > div.scroll {
+		border: 1px solid black;
+		height: 250px;
+		overflow: scroll;
+	}
+
+	main > div.left > div.left2 > div > button {
+		border: 1px solid black;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+
+	main > div.left > div.left2,
+	main > div.left > div.left3.
+	main > div.left > div.left4 {
+		border-bottom: 1px solid red;
+	} 
+
 	
+	main > div.left > div.left3 > h2,
+	main > div.left > div.left4 > h2 {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-style: italic;
+		color: red;
+		font-size: 20px;
+
+	}
+
+	main > div.left > div.left3 > div {
+		margin-bottom: 15px;
+	}
+
+	main > div.left > div.left3 > div > img {
+		float:left;
+		width: 50%;
+		padding-right: 10px;
+	}
+
+	main > div.left > div.left3 > div > p {
+		text-align: justify;
+	}
+
+	main > div.left > div.left3 > div > p > a {
+		text-decoration: none;
+		
+	}
+
+	main > div.left > div.left3 > div > p > a:hover {
+		text-decoration: underline;
+	}
+
+	main > div.left > div.left4 > ul {
+		list-style-type: none;
+	}
+
+	main > div.left > div.left4 > ul > li {
+		text-align: left;
+		border-bottom: 1px solid black;
+		padding-bottom: 15px;
+		padding-top: 15px;
+
+	}
+
+	main > div.left > div.left4 > ul > li:last-child {
+		border-bottom: none;
+	}
+
+	main > div.left > div.left4 > ul > li > a {
+		color: black;
+		text-decoration: none;
+	}*/
+
+
+	/*main > div.right > div {
+		margin-top: 30px;
+		border: 5px solid sandybrown;
+		background-color: white;
+	}*/
+
+	main > div.right > div.box {
+		padding: 20px;
+	}
+
+	main > div.right > div.box > div > h2 {
+		font-family: 'Lato', sans-serif;
+		font-size: 25px;
+		/*float: left;*/
+		font-style: italic;
+		color: red;
+		text-align: left;
+	}
+
+	main > div.right > div.box > div > a.heart {
+		float: right;
+		font-size: 35px;
+		display: block;
+		color: red;
+	}
+
+	main > div.right > div.box > span {
+		font-size: 15px;
+		display: block;
+		
+	}
+
+	main > div.right > div.box > div.content {
+		padding-top: 20px;
+	}
+
+	main > div.right > div.box > div.content > div.image {
+		width: 25%;
+		float: left;
+	}
+
+	main > div.right > div.box > div.content > div.details {
+		width: 73%;
+		float: left;
+		
+	}
+
+	main > div.right > div.box > div.content > div.image > img {
+		width: 100%;
+		padding-right: 10px;
+	}
+
+	main > div.right > div.box > div.content > div.details > a.continue {
+		float: right;
+		text-align: right;
+		color: white;
+		padding: 5px;
+		text-decoration: none;
+		background-color: saddlebrown;
+		letter-spacing: 1px;
+		margin-top: 10px;
+		text-transform: uppercase;
+		font-size: 10px;
+	}
+
+	main > div.right > div.box > div > p {
+		overflow: hidden;
+		padding-bottom: 25px;
+
+	}
+
+	main > div.right > footer {
+		margin-top: 30px;
+	}
+
+
+
+	main > div.right > footer > div > a {
+		text-align: center;
+		display: block;
+	}
+
+	main > div.right > footer > div > a,
+	main > div.right > footer > div > p > a {
+		text-decoration: none;
+		color: black;
+	}
+
+	main > div.right > footer > div > a:hover,
+	main > div.right > footer > div > p > a:hover {
+		text-decoration: underline;
+	}
+
+	main > div.right > footer > div > p {
+		padding-top: 40px;
+	}
+
+	main > div.right > footer > div > p:last-child {
+		padding-left: 80px;
+		font-size: 15px;
+	}
 
 	
 	.container {
